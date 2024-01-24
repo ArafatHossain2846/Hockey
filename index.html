@@ -6,8 +6,150 @@
     <title>Hockey</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FF4240',
+                        'secondary-color': '#131318'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
+
 <body>
+
+                                                                    <!-- Header Section -->
+
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class=" text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Page</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey's</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="text-base menu menu-horizontal px-1">
+                        <li class="text-primary-color font-bold"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Page</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-1 lg:gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <a class="btn btn-primary bg-primary-color text-white border-none font-bold text-xl">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <div class="px-5 md:px-0">
+            <div class="carousel mx-auto w-full h-[200px] md:h-[650px] lg:w-full rounded-box pt-7">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.2.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container mx-auto">
+
+                                                                <!-- Professional Section -->
+
+         <section class="py-10 px-5 md:px-0">
+            <div>
+                <h3 class="text-4xl text-center font-extrabold ">Professional Hockeys Club</h3>
+                <p class="text-base text-center text-neutral-900 text-opacity-60  pt-6 font-medium">Dit amet
+                    consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    <br>dolor. Purus urna in sit nullam proin.
+                </p>
+                <!-- <div class="w-full h-px border border-neutral-900 border-opacity-20"></div> -->
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="">
+                    <div class="card card-compact w-96 bg-none">
+                        <figure><img src="Images/Group 9.png" alt="Asset" /></figure>
+                        <div class="card-body ">
+                            <div class=" text-neutral-900 text-xl font-semibold">Prayer Facility</div>
+                            <p class="">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card card-compact w-96 bg-none">
+                        <figure><img src="Images/Group 9-2.png" alt="Asset" /></figure>
+                        <div class="card-body ">
+                            <div class=" text-neutral-900 text-xl font-semibold">Prayer Facility</div>
+                            <p class="">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card card-compact w-96 bg-none">
+                        <figure><img src="Images/Group 9-3.png" alt="Asset" /></figure>
+                        <div class="card-body ">
+                            <div class=" text-neutral-900 text-xl font-semibold">Prayer Facility</div>
+                            <p class="">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card card-compact w-96 bg-none">
+                        <figure><img src="Images/Group 9-4.png" alt="Asset" /></figure>
+                        <div class="card-body ">
+                            <div class=" text-neutral-900 text-xl font-semibold">Prayer Facility</div>
+                            <p class="">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    
     
 </body>
 </html>
